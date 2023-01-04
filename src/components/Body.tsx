@@ -59,8 +59,8 @@ function Body() {
               x.match(/[a-zA-Z]/) ? (
                 <img
                   src={require(`../img/${x.toLowerCase()}.png`)}
-                  width={100}
-                  height={100}
+                  width={80}
+                  height={80}
                   alt={`${x}`}
                 />
               ) : (
