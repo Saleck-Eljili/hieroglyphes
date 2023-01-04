@@ -1,18 +1,35 @@
-.header{
-    background-color: rgb(23, 23, 23);
-    display: flex;
-    justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
-   
-    a{
-       font-size: larger;
-       margin: 10px;
-       color: rgb(255, 255, 255);       
-    };
-    div{       
-        margin: 10px;       
+.app{
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    .header{
+        background-color: rgb(23, 23, 23);
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 60px;
+        a{
+           font-size: larger;
+           margin: 10px;
+           color: rgb(255, 255, 255);       
+        }
+        div{       
+            margin: 10px;       
+        }   
     }
-
-    
+    .body{
+        background-color: rgb(27, 27, 27);
+        color: rgb(255, 255, 255);
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        input{
+            width: 200px;
+            height: 40px;
+        }
+      
+    }
 }
