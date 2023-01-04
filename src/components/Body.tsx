@@ -15,7 +15,23 @@ function Body() {
         value={message}
       />
 
-      <h2>{message}</h2>
+      <>
+        Message:{" "}
+        {message
+          .split("")
+          .map((x) =>
+            x.match(/[a-zA-Z]/) ? (
+              <img
+                src={require(`../img/${x.toLowerCase()}.png`)}
+                width={100}
+                height={100}
+                alt={`${x}`}
+              />
+            ) : (
+              ""
+            )
+          )}
+      </>
     </div>
   );
 }
