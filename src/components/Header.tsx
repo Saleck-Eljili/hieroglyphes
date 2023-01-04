@@ -1,10 +1,14 @@
 function Header() {
   return (
     <div className="header">
-      <a href="#">Home</a>
-      <div>
-        <a href="#">apprendre</a> <a href="#">a propos</a>
-      </div>
+      <a href="/">
+        <img
+          src={require(`../img/Louvre_faucon.png`)}
+          width={80}
+          height={40}
+          alt={`Louvre_faucon`}
+        />
+      </a>
     </div>
   );
 }
