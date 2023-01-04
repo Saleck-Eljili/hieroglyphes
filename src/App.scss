@@ -1,9 +1,9 @@
 .app{
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(78, 78, 78);
     color: rgb(255, 255, 255);
     height: 100vh;
     .header{
-        background-color: rgb(23, 23, 23);
+        background-color: rgb(70, 70, 70);
         display: flex;
         justify-content: space-between;
         padding-left: 15px;
@@ -19,16 +19,28 @@
         }   
     }
     .body{
-        background-color: rgb(27, 27, 27);
+        background-color: rgb(78, 78, 78);
         color: rgb(255, 255, 255);
         margin-top: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        h3{
+            padding: 5px;
+        }
         input{
             width: 200px;
             height: 40px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        div{
+            margin-top: 20px;
+            margin-left: 10px;
+            display: flex;
+            font-display: row;
+            flex-wrap: wrap;
         }
       
     }

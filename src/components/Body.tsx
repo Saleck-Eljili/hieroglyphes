@@ -8,30 +8,67 @@ function Body() {
   };
   return (
     <div className="body">
+      <h3>
+        <>
+          {"Entrez votre nom"
+            .split("")
+            .map((x) =>
+              x.match(/[a-zA-Z]/) ? (
+                <img
+                  src={require(`../img/${x.toLowerCase()}.png`)}
+                  width={14}
+                  height={14}
+                  alt={`${x}`}
+                />
+              ) : (
+                " "
+              )
+            )}
+        </>
+      </h3>
+      <h3>Entrez votre nom</h3>
+      <h3>
+        <>
+          {"Entrez votre nom"
+            .split("")
+            .map((x) =>
+              x.match(/[a-zA-Z]/) ? (
+                <img
+                  src={require(`../img/${x.toLowerCase()}.png`)}
+                  width={14}
+                  height={14}
+                  alt={`${x}`}
+                />
+              ) : (
+                " "
+              )
+            )}
+        </>
+      </h3>
       <input
         type="text"
         name="message"
         onChange={handleChange}
         value={message}
       />
-
-      <>
-        Message:{" "}
-        {message
-          .split("")
-          .map((x) =>
-            x.match(/[a-zA-Z]/) ? (
-              <img
-                src={require(`../img/${x.toLowerCase()}.png`)}
-                width={100}
-                height={100}
-                alt={`${x}`}
-              />
-            ) : (
-              ""
-            )
-          )}
-      </>
+      <div>
+        <>
+          {message
+            .split("")
+            .map((x) =>
+              x.match(/[a-zA-Z]/) ? (
+                <img
+                  src={require(`../img/${x.toLowerCase()}.png`)}
+                  width={100}
+                  height={100}
+                  alt={`${x}`}
+                />
+              ) : (
+                ""
+              )
+            )}
+        </>
+      </div>
     </div>
   );
 }
